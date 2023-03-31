@@ -20,7 +20,7 @@ function videofooter() {
       <img
         className="VideoFooter__record"
         alt="Imagem de um vinil girando"      
-        src="https://firebasestorage.googleapis.com/v0/b/jornada-dev.appspot.com/o/vinil.png?alt=media&token=d174bbec-b930-41e4-ab50-af1ea81bb7da"
+        src="https://firebasestorage.googleapis.com/v0/b/jornada-b5e9d.appspot.com/o/vinil.png?alt=media&token=95dd7b93-7976-446f-944b-5ea6a4fb85c9"
       />
     </div>
   );

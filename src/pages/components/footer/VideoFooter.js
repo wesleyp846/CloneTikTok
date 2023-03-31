@@ -2,18 +2,18 @@ import React from "react";
 import "./videofooter.css";
 import MusicNoteIcon from '@mui/icons-material/MusicNote';
 
-function videofooter() {
+function videofooter({name, description, music}) {
   return (
     <div className="VideoFooter">
       <div className="VideoFooter__text">
-        <h3>@Wesley Pereira</h3>
-        <p>Descrição do Video</p>
+        <h3>@{name}</h3>
+        <p>{description}</p>
         <div className="VideoFooter__music">
           {/*Icones para serem usados no React*/}
           {/*https://mui.com/material-ui/material-icons/*/}
           <MusicNoteIcon/>
           <div className="VideoFooterMusic__text">
-              <p>Título da Música</p>
+              <p>{music}</p>
           </div>
         </div>
       </div>

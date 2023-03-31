@@ -3,7 +3,7 @@ import "./video.css";
 import VideoFooter from "./components/footer/VideoFooter";
 import Videosidebar from "./components/footer/sidebar/Videosidebar";
 
-function Video() {
+function Video({likes, messages, shares, name, description, music, url}) {
   const videoRef = useRef(null);
   const [play, setPlay] = useState(false);
 
@@ -24,12 +24,20 @@ function Video() {
         ref={videoRef}
         onClick={handlleStart}
         loop
-        src="  https://firebasestorage.googleapis.com/v0/b/jornada2-eb156.appspot.com/o/ZqU6oFX6.mp4.mp4?alt=media&token=9839e872-2d5e-4da3-9299-17eb2949831d"
+        src={url}
       ></video>
       {/*Side Bar*/}
-      <Videosidebar/>
+      <Videosidebar 
+        likes={likes} 
+        messages={messages} 
+        shares={shares} 
+      />
       {/*footer*/}
-      <VideoFooter />
+      <VideoFooter
+      name={name}
+      description={description}
+      music={music}
+      />
     </div>
   );
 }

@@ -56,3 +56,12 @@
         transform: translateX(-100%);
     }
 }
+
+@media only screen and (max-width: 440px){
+    .VideoFooter{
+      bottom: 20%;
+    }
+    .VideoFooterMusic__text{
+        width: 70%;
+    } 
+  }
